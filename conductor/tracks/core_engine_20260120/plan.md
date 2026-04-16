@@ -4,8 +4,8 @@ This plan outlines the tasks required to build the core game engine for "Data an
 
 ## Phase 1: Project Setup and Initial Data Structures
 
-- [ ] Task: Initialize Python project structure with `pyproject.toml`.
-- [ ] Task: Add `pydantic` and `pydantic-ai` as dependencies.
+- [x] 4f02f5c Task: Initialize Python project structure with `pyproject.toml`.
+- [~] Task: Add `pydantic` and `pydantic-ai` as dependencies.
 - [ ] Task: Define core data models using Pydantic for `GameState`, `Player`, `Scenario`, `NPC`, and `Action`.
 - [ ] Task: Conductor - User Manual Verification 'Phase 1: Project Setup and Initial Data Structures' (Protocol in workflow.md)
 
