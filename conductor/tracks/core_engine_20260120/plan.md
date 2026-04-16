@@ -14,11 +14,11 @@ This plan outlines the tasks required to build the core game engine for "Data an
 - [x] 658862c Task: Implement a `ScenarioLoader` to read scenario definitions from a YAML file.
     - [ ] Write tests for `ScenarioLoader`.
     - [ ] Implement `ScenarioLoader`.
-- [~] Task: Implement the `ScenarioManager` to handle game state and progression.
+- [x] bf38a8c Task: Implement the `ScenarioManager` to handle game state and progression.
     - [ ] Write tests for `ScenarioManager`.
     - [ ] Implement `ScenarioManager`.
-- [ ] Task: Create initial scenario definitions in YAML for the first two scenarios.
-- [ ] Task: Conductor - User Manual Verification 'Phase 2: Scenario Engine Implementation' (Protocol in workflow.md)
+- [x] 4e05c24 Task: Create initial scenario definitions in YAML for the first two scenarios.
+- [~] Task: Conductor - User Manual Verification 'Phase 2: Scenario Engine Implementation' (Protocol in workflow.md)
 
 ## Phase 3: NPC Interaction Module
 
