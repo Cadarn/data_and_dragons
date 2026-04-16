@@ -116,7 +116,7 @@ class Judge:
     async def _call_llm(self, scenario: Scenario, action: Action) -> JudgementResult:
         """Send the evaluation request to the LLM and return the structured result."""
         system_prompt, user_prompt = self.build_prompts(scenario, action)
-        result = await self._get_agent().run(user_prompt, system_prompt=system_prompt)
+        result = await self._get_agent().run(user_prompt, instructions=system_prompt)
         return result.output
 
     async def evaluate(self, scenario: Scenario, action: Action) -> ActionOutcome:
