@@ -2,16 +2,16 @@
 
 This plan outlines the tasks required to build the core game engine for "Data and Dragons."
 
-## Phase 1: Project Setup and Initial Data Structures
+## Phase 1: Project Setup and Initial Data Structures [checkpoint: aea4205]
 
 - [x] 4f02f5c Task: Initialize Python project structure with `pyproject.toml`.
 - [x] 8db5f5a Task: Add `pydantic` and `pydantic-ai` as dependencies.
-- [~] Task: Define core data models using Pydantic for `GameState`, `Player`, `Scenario`, `NPC`, and `Action`.
-- [ ] Task: Conductor - User Manual Verification 'Phase 1: Project Setup and Initial Data Structures' (Protocol in workflow.md)
+- [x] 0698f59 Task: Define core data models using Pydantic for `GameState`, `Player`, `Scenario`, `NPC`, and `Action`.
+- [x] Task: Conductor - User Manual Verification 'Phase 1: Project Setup and Initial Data Structures' (Protocol in workflow.md)
 
 ## Phase 2: Scenario Engine Implementation
 
-- [ ] Task: Implement a `ScenarioLoader` to read scenario definitions from a YAML file.
+- [~] Task: Implement a `ScenarioLoader` to read scenario definitions from a YAML file.
     - [ ] Write tests for `ScenarioLoader`.
     - [ ] Implement `ScenarioLoader`.
 - [ ] Task: Implement the `ScenarioManager` to handle game state and progression.
