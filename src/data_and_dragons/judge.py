@@ -99,7 +99,7 @@ class Judge:
     def _get_agent(self) -> Agent:
         """Lazily construct the agent on first LLM call."""
         if self._agent is None:
-            self._agent = Agent(model=self._model, result_type=JudgementResult)
+            self._agent = Agent(model=self._model, output_type=JudgementResult)
         return self._agent
 
     def build_prompts(self, scenario: Scenario, action: Action) -> Tuple[str, str]:
@@ -117,7 +117,7 @@ class Judge:
         """Send the evaluation request to the LLM and return the structured result."""
         system_prompt, user_prompt = self.build_prompts(scenario, action)
         result = await self._get_agent().run(user_prompt, system_prompt=system_prompt)
-        return result.data
+        return result.output
 
     async def evaluate(self, scenario: Scenario, action: Action) -> ActionOutcome:
         """
