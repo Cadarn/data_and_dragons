@@ -9,7 +9,10 @@ description = "A gamified data science simulator where an LLM judges player stra
 readme = "README.md"
 requires-python = ">=3.14"
 license = { text = "MIT" }
-dependencies = []
+dependencies = [
+    "pydantic>=2.0.0",
+    "pydantic-ai>=0.0.1"
+]
 
 [project.optional-dependencies]
 dev = [
