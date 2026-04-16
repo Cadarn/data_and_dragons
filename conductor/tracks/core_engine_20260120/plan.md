@@ -28,15 +28,11 @@ This plan outlines the tasks required to build the core game engine for "Data an
 
 ## Phase 4: LLM-based "Judge" Architecture
 
-- [~] Task: Implement the `Judge` class, virtual dice roll, and prompt templates.
-    - [ ] Write tests for the `Judge` class.
-    - [ ] Implement the `Judge` class.
-    - [ ] Implement the "virtual dice roll" mechanism.
-    - [ ] Implement prompt templates for evaluating player actions.
-- [ ] Task: Conductor - User Manual Verification 'Phase 4: LLM-based "Judge" Architecture' (Protocol in workflow.md)
+- [x] 7e667a5 Task: Implement the `Judge` class, virtual dice roll, and prompt templates.
+- [x] Task: Conductor - User Manual Verification 'Phase 4: LLM-based "Judge" Architecture' (Protocol in workflow.md)
 
 ## Phase 5: Initial Game Loop and CLI
 
-- [ ] Task: Create a basic command-line interface (CLI) to interact with the game engine.
-- [ ] Task: Implement the main game loop that ties together all the components.
-- [ ] Task: Conductor - User Manual Verification 'Phase 5: Initial Game Loop and CLI' (Protocol in workflow.md)
+- [x] Task: Create a basic command-line interface (CLI) to interact with the game engine.
+- [x] Task: Implement the main game loop that ties together all the components.
+- [~] Task: Conductor - User Manual Verification 'Phase 5: Initial Game Loop and CLI' (Protocol in workflow.md)
