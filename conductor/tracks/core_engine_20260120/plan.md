@@ -11,10 +11,10 @@ This plan outlines the tasks required to build the core game engine for "Data an
 
 ## Phase 2: Scenario Engine Implementation
 
-- [~] Task: Implement a `ScenarioLoader` to read scenario definitions from a YAML file.
+- [x] 658862c Task: Implement a `ScenarioLoader` to read scenario definitions from a YAML file.
     - [ ] Write tests for `ScenarioLoader`.
     - [ ] Implement `ScenarioLoader`.
-- [ ] Task: Implement the `ScenarioManager` to handle game state and progression.
+- [~] Task: Implement the `ScenarioManager` to handle game state and progression.
     - [ ] Write tests for `ScenarioManager`.
     - [ ] Implement `ScenarioManager`.
 - [ ] Task: Create initial scenario definitions in YAML for the first two scenarios.
