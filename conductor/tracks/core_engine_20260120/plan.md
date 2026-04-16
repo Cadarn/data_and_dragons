@@ -18,11 +18,11 @@ This plan outlines the tasks required to build the core game engine for "Data an
     - [ ] Write tests for `ScenarioManager`.
     - [ ] Implement `ScenarioManager`.
 - [x] 4e05c24 Task: Create initial scenario definitions in YAML for the first two scenarios.
-- [~] Task: Conductor - User Manual Verification 'Phase 2: Scenario Engine Implementation' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 2: Scenario Engine Implementation' (Protocol in workflow.md)
 
 ## Phase 3: NPC Interaction Module
 
-- [ ] Task: Implement a basic `DialogueManager` to handle NPC interactions.
+- [~] Task: Implement a basic `DialogueManager` to handle NPC interactions.
     - [ ] Write tests for `DialogueManager`.
     - [ ] Implement `DialogueManager`.
 - [ ] Task: Integrate `DialogueManager` with the `ScenarioManager`.
