@@ -22,19 +22,17 @@ This plan outlines the tasks required to build the core game engine for "Data an
 
 ## Phase 3: NPC Interaction Module
 
-- [~] Task: Implement a basic `DialogueManager` to handle NPC interactions.
-    - [ ] Write tests for `DialogueManager`.
-    - [ ] Implement `DialogueManager`.
-- [ ] Task: Integrate `DialogueManager` with the `ScenarioManager`.
-- [ ] Task: Conductor - User Manual Verification 'Phase 3: NPC Interaction Module' (Protocol in workflow.md)
+- [x] cd05d86 Task: Implement a basic `DialogueManager` to handle NPC interactions.
+- [x] cd05d86 Task: Integrate `DialogueManager` with the `ScenarioManager`.
+- [x] Task: Conductor - User Manual Verification 'Phase 3: NPC Interaction Module' (Protocol in workflow.md)
 
 ## Phase 4: LLM-based "Judge" Architecture
 
-- [ ] Task: Implement the `Judge` class to encapsulate LLM interaction.
+- [~] Task: Implement the `Judge` class, virtual dice roll, and prompt templates.
     - [ ] Write tests for the `Judge` class.
     - [ ] Implement the `Judge` class.
-- [ ] Task: Implement the "virtual dice roll" mechanism and integrate it with the `Judge`'s scoring logic.
-- [ ] Task: Implement the prompt templates for evaluating player actions.
+    - [ ] Implement the "virtual dice roll" mechanism.
+    - [ ] Implement prompt templates for evaluating player actions.
 - [ ] Task: Conductor - User Manual Verification 'Phase 4: LLM-based "Judge" Architecture' (Protocol in workflow.md)
 
 ## Phase 5: Initial Game Loop and CLI
