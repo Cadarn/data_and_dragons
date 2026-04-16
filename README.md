@@ -23,9 +23,10 @@ Players take on the role of a newly hired data science consultant. Over a series
 
 ## Requirements
 
-- Python **3.10+**
+- Python **3.14+**
 - [`uv`](https://github.com/astral-sh/uv) — used for all dependency management and script execution
-- An **OpenAI API key** (set as `OPENAI_API_KEY` in your environment)
+- An **OpenAI API key** (stored in `.env`, see Setup)
+- **pydantic-ai `>=1.83`** — note this version introduced breaking API changes; the project is pinned to this API (`output_type=`, `result.output`, `instructions=`)
 
 Install `uv` if you don't have it:
 ```bash
@@ -108,7 +109,7 @@ data_and_dragons/
 │   └── test_dialogue_manager.py
 │
 ├── pyproject.toml              # Project metadata and dependencies
-└── conductor/                  # Development planning documents (not pushed to origin)
+└── conductor/                  # Development planning documents (tracked in git)
 ```
 
 ---
@@ -192,9 +193,10 @@ other_npcs:
 | Package | Purpose |
 |---|---|
 | `pydantic` | Data models and structured LLM outputs |
-| `pydantic-ai` | LLM integration, agentic orchestration, and Judge evaluation |
+| `pydantic-ai >=1.83` | LLM integration, agentic orchestration, and Judge evaluation |
 | `pyyaml` | Loading scenario and NPC definitions from YAML |
 | `textual` | *(Track 3)* Rich terminal user interface |
+| `python-dotenv` | Loading API keys and config from `.env` |
 
 Dev: `pytest`, `pytest-cov`, `pytest-asyncio`
 
