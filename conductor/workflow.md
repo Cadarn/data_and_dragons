@@ -150,20 +150,21 @@ Before marking any task complete, verify:
 
 ## Development Commands
 
-**AI AGENT INSTRUCTION: This section should be adapted to the project's specific language, framework, and build tools.**
+**AI AGENT INSTRUCTION: All Python operations MUST use `uv`.**
 
 ### Setup
 ```bash
-# Example: Commands to set up the development environment (e.g., install dependencies, configure database)
-# e.g., for a Node.js project: npm install
-# e.g., for a Go project: go mod tidy
+# General environment and dependency setup
+uv sync
+uv add <library>        # For adding a production dependency
+uv add --dev <library>  # For adding a development dependency
 ```
 
 ### Daily Development
 ```bash
-# Example: Commands for common daily tasks (e.g., start dev server, run tests, lint, format)
-# e.g., for a Node.js project: npm run dev, npm test, npm run lint
-# e.g., for a Go project: go run main.go, go test ./..., go fmt ./...
+# Running scripts and tests with uv
+uv run python src/main.py
+uv run pytest tests/
 ```
 
 ### Before Committing
