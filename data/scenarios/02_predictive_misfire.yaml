@@ -1,15 +1,25 @@
 title: "The Predictive Misfire"
 description: >
-  A major client wants to predict customer churn. The previous consultant trained a Random Forest model with 99% accuracy on the test set, 
-  but it completely fails in production. You suspect data leakage, specifically that they included a 'churn_date' column as a feature.
-  You need to explain the concept of data leakage to the client and propose a corrected modeling pipeline.
+  A major client wants to predict customer churn. The previous consultant trained a Random Forest model with 99% accuracy
+  on the test set, but it completely fails in production. You suspect data leakage — specifically that they included a
+  'churn_date' column as a feature. You need to explain the concept of data leakage to the client and propose a
+  corrected modeling pipeline.
 difficulty: "Medium"
+
+# Roster NPCs active in this scenario (referenced by id from data/npcs.yaml)
 npcs:
-  - name: "VP of Marketing"
-    role: "Client Stakeholder"
-    personality: "Skeptical, results-oriented"
-    background: "Doesn't understand ML, just wants to know why the model is losing them money."
-  - name: "Former Consultant (via email notes)"
-    role: "Predecessor"
-    personality: "Overconfident"
-    background: "Left messy, undocumented Jupyter notebooks."
+  - npc_id: "priya_natarajan"
+    scenario_role: "She owns the feature pipeline that caused the leakage. Defensive at first, but honest once cornered."
+  - npc_id: "declan_ofarrell"
+    scenario_role: "He sold this model to the client as production-ready. He needs you to fix it quietly."
+
+# One-off NPCs specific to this scenario
+other_npcs:
+  - id: "vp_marketing"
+    name: "Marcus Webb"
+    role: "VP of Marketing (Client)"
+    personality: "Skeptical, commercially sharp"
+    background: >
+      Marcus approved the budget for this ML project and is now watching it fail in production.
+      He does not understand machine learning, but he understands that his campaign targeting is broken
+      and someone needs to explain why — in plain English.

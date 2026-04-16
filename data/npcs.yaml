@@ -1,0 +1,40 @@
+# Company NPC Roster
+# These are the recurring characters at the consultancy.
+# Scenarios reference these by `id` and can extend them with `scenario_role`.
+
+npcs:
+  - id: "sarah_jenkins"
+    name: "Sarah Jenkins"
+    role: "Senior Consultant"
+    personality: "Supportive but demanding"
+    background: >
+      A ten-year veteran of the consultancy who has seen every data disaster imaginable. 
+      She believes strongly in reproducible, scalable Python solutions and has zero patience for copy-pasted Excel macros.
+      She is your assigned mentor and keeps an eye on your progress across all projects.
+
+  - id: "todd_harris"
+    name: "Todd Harris"
+    role: "Client Project Manager"
+    personality: "Anxious and tech-illiterate"
+    background: >
+      Todd joined the client company after fifteen years in logistics and is convinced
+      that all problems can be solved with a well-made spreadsheet. He is not your enemy,
+      he's just deeply, deeply out of his depth.
+
+  - id: "priya_natarajan"
+    name: "Priya Natarajan"
+    role: "Head of Data Engineering"
+    personality: "Blunt, technically rigorous"
+    background: >
+      Priya owns the data pipelines and is fiercely protective of data quality standards.
+      She will call out sloppy joins or mismatched schemas immediately. Get her on your side
+      and she is an invaluable ally.
+
+  - id: "declan_ofarrell"
+    name: "Declan O'Farrell"
+    role: "Engagement Manager"
+    personality: "Charming, commercially driven"
+    background: >
+      Declan sold the project to the client and is responsible for keeping them happy.
+      He doesn't understand the technical details but he understands margin, risk,
+      and keeping the client from calling the CEO.

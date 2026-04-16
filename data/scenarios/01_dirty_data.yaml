@@ -1,15 +1,23 @@
 title: "The Excel Catastrophe"
 description: >
-  Your first day at the consultancy. The client has sent over a 10,000-row spreadsheet representing ten years of sales data. 
-  Unfortunately, dates are mixed formats (some US, some UK, some just 'Tuesday'), prices have currency symbols randomly attached, 
-  and there are nulls everywhere. You need to propose a robust cleaning strategy.
+  Your first day at the consultancy. The client has sent over a 10,000-row spreadsheet representing ten years of sales data.
+  Dates are in mixed formats (some US, some UK, some just "Tuesday"), prices have currency symbols randomly attached,
+  and there are nulls everywhere. You need to propose a robust cleaning strategy before the project kicks off tomorrow.
 difficulty: "Easy"
+
+# Roster NPCs active in this scenario (referenced by id from data/npcs.yaml)
 npcs:
-  - name: "Todd"
-    role: "Client Project Manager"
-    personality: "Anxious, tech-illiterate"
-    background: "Believes Excel can solve everything. Worried about project timelines."
-  - name: "Sarah"
-    role: "Senior Consultant (Your Mentor)"
-    personality: "Supportive but demanding"
-    background: "Expects scalable Python solutions (Pandas/Polars) rather than manual fixes."
+  - npc_id: "todd_harris"
+    scenario_role: "The client contact handing over the data. He doesn't understand why you can't just 'fix it in Excel'."
+  - npc_id: "sarah_jenkins"
+    scenario_role: "Your direct mentor on this project. She is watching how you handle your first client interaction."
+
+# One-off NPCs specific to this scenario
+other_npcs:
+  - id: "janet_bloom"
+    name: "Janet Bloom"
+    role: "Regional Sales Director"
+    personality: "Impatient and results-focused"
+    background: >
+      Janet is visiting for the quarterly review and wants the data ready by EOD.
+      She is not a regular character but her pressure is very real.

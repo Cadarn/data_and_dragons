@@ -1,6 +1,6 @@
 import pytest
 from pydantic import ValidationError
-from data_and_dragons.models import GameState, Player, Scenario, NPC, Action
+from data_and_dragons.models import GameState, Player, Scenario, NPC, Action, ResolvedNPC
 
 def test_player_model():
     p = Player(name="Alice", score=0)
@@ -11,16 +11,18 @@ def test_player_model():
         Player(name="Bob", score="not_a_number")
 
 def test_npc_model():
-    npc = NPC(name="CEO", role="Client", personality="Aggressive", background="Needs results ASAP")
+    npc = NPC(id="ceo_001", name="CEO", role="Client", personality="Aggressive", background="Needs results ASAP")
     assert npc.name == "CEO"
     assert npc.role == "Client"
+    assert npc.id == "ceo_001"
 
 def test_scenario_model():
+    npc = ResolvedNPC(id="lead", name="Data Lead", role="Ally", personality="Helpful", background="")
     s = Scenario(
         title="Predictive Analytics",
         description="Predict customer churn",
         difficulty="Medium",
-        npcs=[NPC(name="Data Lead", role="Ally", personality="Helpful", background="")]
+        npcs=[npc]
     )
     assert s.title == "Predictive Analytics"
     assert len(s.npcs) == 1
