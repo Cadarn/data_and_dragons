@@ -1,0 +1,15 @@
+title: "The Predictive Misfire"
+description: >
+  A major client wants to predict customer churn. The previous consultant trained a Random Forest model with 99% accuracy on the test set, 
+  but it completely fails in production. You suspect data leakage, specifically that they included a 'churn_date' column as a feature.
+  You need to explain the concept of data leakage to the client and propose a corrected modeling pipeline.
+difficulty: "Medium"
+npcs:
+  - name: "VP of Marketing"
+    role: "Client Stakeholder"
+    personality: "Skeptical, results-oriented"
+    background: "Doesn't understand ML, just wants to know why the model is losing them money."
+  - name: "Former Consultant (via email notes)"
+    role: "Predecessor"
+    personality: "Overconfident"
+    background: "Left messy, undocumented Jupyter notebooks."
