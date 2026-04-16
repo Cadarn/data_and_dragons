@@ -47,9 +47,10 @@ uv sync
 
 This installs all dependencies (including dev tools like `pytest`) declared in `pyproject.toml` and creates a local `.venv`.
 
-Set your OpenAI API key:
+Configure your environment variables:
 ```bash
-export OPENAI_API_KEY="sk-..."
+cp .env.example .env
+# Edit .env and set your OPENAI_API_KEY
 ```
 
 ---

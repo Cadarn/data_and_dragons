@@ -9,6 +9,12 @@ import glob
 import os
 import sys
 
+from dotenv import load_dotenv
+
+# Load .env from the project root (two levels up from this file in src/data_and_dragons/)
+_project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+load_dotenv(os.path.join(_project_root, ".env"))
+
 from data_and_dragons.models import Player
 from data_and_dragons.scenario_loader import NPCRoster, ScenarioLoader
 from data_and_dragons.game_loop import GameLoop
